@@ -25,6 +25,13 @@ describe('API - Post', () => {
         })    
     })
 
+    // Para limpar cookie de autenticação
+    // after(() => {
+    //     Cypress.Cookies.defaults({
+    //         preserve: []
+    //     })
+    // })
+
     it('Valida todos os posts ', () => {
 
         cy.request({
